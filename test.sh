@@ -1,8 +1,7 @@
 #!/bin/sh
-APPEND0=test0
-APPEND1=test1
+APPEND0=<script type="text/javascript" src="/includes/notemplate/googleanaltyics.js"></script>
+APPEND1=<script type="text/javascript" src="/includes/foresee/foresee-trigger-stg-online.js"></script>
 . ./filelist.sh
-                  
 
 for file in $FILES
 do

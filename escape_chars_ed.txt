@@ -1,0 +1,17 @@
+The following extended operators are preceded by a backslash '\' to distinguish them from traditional ed syntax.
+
+\`
+\'
+Unconditionally matches the beginning '\`' or ending '\'' of a line. 
+\?
+Optionally matches the single character regular expression or subexpression immediately preceding it. For example, the regular expression 'a[bd]\?c' matches the strings 'abc', 'adc' and 'ac'. If '\?' occurs at the beginning of a regular expressions or subexpression, then it matches a literal '?'. 
+\+
+Matches the single character regular expression or subexpression immediately preceding it one or more times. So the regular expression 'a\+' is shorthand for 'aa*'. If '\+' occurs at the beginning of a regular expression or subexpression, then it matches a literal '+'. 
+\b
+Matches the beginning or ending (null string) of a word. Thus the regular expression '\bhello\b' is equivalent to '\<hello\>'. However, '\b\b' is a valid regular expression whereas '\<\>' is not. 
+\B
+Matches (a null string) inside a word. 
+\w
+Matches any character in a word. 
+\W
+Matches any character not in a word.

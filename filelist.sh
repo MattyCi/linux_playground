@@ -1,3 +1,3 @@
 #!/bin/sh
-FILES="./test.htm
-./subfolder/testsub.htm"
+FILES="./help.htm
+../../internet/lab/labHelp.htm"
