@@ -1,9 +1,7 @@
 #!/bin/sh
 APPEND0="test"
 APPEND1="test!"
-for find . -type f -exec grep -l "print.css" '{}' \;
+for grep in "find . -type f -name "*.htm" -exec grep -l "print.css" '{}' \;"
 do
-printf "/print\.css/a\n$APPEND0\n$APPEND1\n.\nw\nq\n" | ed $GREP
+printf "/print\.css/a\n$APPEND0\n$APPEND1\n.\nw\nq\n" | ed $grep
 done
-
-
